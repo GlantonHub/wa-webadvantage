@@ -127,12 +127,12 @@
               {
 			  
 			  
-			  
- 
-			   "ConnectionString": "[concat('Server=tcp:', reference(concat('Microsoft.Sql/servers/', parameters('sqlServerName'))).fullyQualifiedDomainName, ',;Initial Catalog=', parameters('siteName'), ';UId=', parameters('sqlAdministratorLogin'), '@', parameters('sqlServerName'), ';Password=', parameters('sqlAdministratorPassword') ';)]" ,
-                "Name": "WA",
-                "Type": 2
 			   
+			  
+                "ConnectionString": "[concat('server=, parameters('sqlServerName'))).fullyQualifiedDomainName, ';Initial Catalog=', parameters('siteName'), ';UId=', parameters('sqlAdministratorLogin'), '@', parameters('sqlServerName'), ';Password=', parameters('sqlAdministratorPassword'), ';')]",
+                "Name": "Jabbr",
+                "Type": 2
+    
                
 			   }
             ]
