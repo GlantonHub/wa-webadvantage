@@ -126,7 +126,7 @@
             "connectionStrings": [
               {
 			  
-			  <add key="SiteSqlServer" value="Data Source=x80ktg3qfe.database.windows.net;Initial Catalog=dnngittest;User ID=glanton;Password=Gl4ns0lute" />
+			 
 			  
  
 			   "ConnectionString": "[concat('Server=tcp:', reference(concat('Microsoft.Sql/servers/', parameters('sqlServerName'))).fullyQualifiedDomainName, ',;Initial Catalog=', parameters('siteName'), ';UId=', parameters('sqlAdministratorLogin'), '@', parameters('sqlServerName'), ';Password=', parameters('sqlAdministratorPassword') ';)]",
