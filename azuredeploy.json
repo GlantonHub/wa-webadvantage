@@ -123,18 +123,12 @@
             "[concat('Microsoft.Web/Sites/', parameters('siteName'))]"
           ],
           "properties": {
-            "connectionStrings": [
+          
+			    "connectionStrings": [
               {
- 
-			  
-			  
-			   
-			  
-                "ConnectionString": "[concat('server=, parameters('sqlServerName'))).fullyQualifiedDomainName, ';Initial Catalog=', parameters('siteName'), ';UId=', parameters('sqlAdministratorLogin'), '@', parameters('sqlServerName'), ';Password=', parameters('sqlAdministratorPassword'), ';')]",
+                "ConnectionString": "[concat('Data Source=tcp:', reference(concat('Microsoft.Sql/servers/', parameters('sqlServerName'))).fullyQualifiedDomainName, ',1433;Initial Catalog=', parameters('siteName'), ';User Id=', parameters('sqlAdministratorLogin'), '@', parameters('sqlServerName'), ';Password=', parameters('sqlAdministratorPassword'), ';')]",
                 "Name": "Jabbr",
- 
                 "Type": 2
-    
                
 			   }
             ]
