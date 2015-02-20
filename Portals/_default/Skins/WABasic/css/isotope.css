@@ -1,0 +1,141 @@
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+/* End: Recommended Isotope styles */
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+/**** Isotope styles ****/
+.element {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  color: #222;
+}
+.two_columns{ min-height:447px;}
+.three_columns{ min-height:324px;}
+.four_columns{ min-height:234px;}
+
+.isotope_img img {
+	position: relative;
+	height: auto;
+    width: 100%;
+	opacity: 0.88;
+	
+}
+.isotope_img img:hover {
+	opacity:1;
+}
+.strip {
+    display: block;
+	background: none repeat scroll 0 0 #FF6812;
+    height: 3px;
+    width: 50px;
+}
+/**** Example Options ****/
+
+#options ul {
+    padding-top:15px;
+    list-style: none outside none;
+    margin: 0 auto 30px;
+    max-width: 100% !important;
+    position: relative;
+    text-align: center;
+}
+
+#options ul li {
+    display: inline-block;
+	background:#898989;
+	padding:8px 20px;
+	margin:3px 2px;
+	-moz-transition:background 1s ease;
+	-webkit-transition:background 1s ease;
+	transition:background 1s ease;
+}
+#options ul li:hover {
+	background:#555;
+}
+
+#options ul li:last-child {border-right:none;}
+
+#options ul li a {
+    border-bottom: medium none !important;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+#options ul li a { text-decoration:none;}
+
+#options a {
+    display: block;
+    font-size: 12px;
+    line-height: 22px;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+
+
+@media handheld, only screen and (max-width: 767px) {
+.element{ width:265px;}
+.two_columns{ min-height:234px;}
+.three_columns{ min-height:234px;}
+.four_columns{ min-height:234px;}
+
+}

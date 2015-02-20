@@ -1,0 +1,340 @@
+@import url(bootstrap/css/bootstrap.css);
+@import url(css/all.css);
+@import url(css/tablet.css);
+@import url(css/mobile.css);
+@import url(css/fancybox.css);
+@import url(css/isotope.css);
+@import url(css/unoslider.css);
+@import url(css/trans-banner.css);
+@import url(css/layerslider.css);
+@import url(css/flexslider.css);
+@import url(css/animated.css);
+@import url(js/colorpicker/css/colorpicker.css);
+@import url(//fonts.googleapis.com/css?family=Lora);
+@import url(//fonts.googleapis.com/css?family=Noto+Sans);
+@-webkit-viewport {width:device-width;}
+@-moz-viewport {width:device-width;}
+@-ms-viewport {width:device-width;}
+@-o-viewport {width:device-width;}
+@viewport {width:device-width;}
+/*
+ * CSS For DotNetNuke Skin by bestdnnskins.com
+ * Copyright 2014 By BESTDNNSKINS.COM
+ */
+/*--------- Global CSS Reset & Standards ----------*/
+Body { margin:0;padding:0; background:#ffffff; }
+#Body{ background:#bbb url(images/bg_pattern/bg_grid_17.png) fixed center top;color:#555; }
+html,body{ margin:0; padding:0; font:normal 13px/1.5 'Noto Sans',Arial, Tahoma, sans-serif; color:#555;}
+Body #Form{ height:100%; }
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend, caption, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {border:0; font-family:'Noto Sans',Arial, Tahoma, sans-serif;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}a img{border:0;}
+img, object, embed, iframe{ max-width: 100%;}
+[class^="map"] img, [class*="map"] img,[id^="map"] img, [id*="map"] img, [class^="Map"] img, [class*="Map"] img,[id^="Map"] img, [id*="Map"] img, table img { max-width:none!important;}
+p{ margin:0 0 8px 0; }
+img{border:0; height:auto;}
+
+A:link { color :#898989; text-decoration : none; }
+A:visited { color :#898989; text-decoration : none; }
+A:hover { color :#555; text-decoration:none;  -moz-transition:color 0.2s linear;  -webkit-transition:color 0.2s linear; -o-transition:color 0.2s linear; -ms-transition:color 0.2s linear; transition:color 0.2s linear; }
+A:active { color :#898989; text-decoration : none; }
+
+h1{font-size:28px;line-height:1.5em;letter-spacing:0;color:#898989;font-weight:bold;font-family:'Lora',Arial, Tahoma, sans-serif;}
+h2{font-size:24px;line-height:1.5em;letter-spacing:0;color:#898989;font-weight:bold;font-family:'Lora',Arial, Tahoma, sans-serif;}
+h3{font-size:20px;line-height:1.5em;letter-spacing:0;color:#898989;font-weight:bold;font-family:'Lora',Arial, Tahoma, sans-serif;}
+h4{font-size:18px;line-height:1.5em;letter-spacing:0;color:#898989;font-weight:bold;font-family:'Lora',Arial, Tahoma, sans-serif;}
+h5{font-size:16px;line-height:1.5em;letter-spacing:0;color:#898989;font-weight:bold;font-family:'Lora',Arial, Tahoma, sans-serif;}
+h6{font-size:14px;line-height:1.5em;letter-spacing:0;color:#898989;font-weight:bold;font-family:'Lora',Arial, Tahoma, sans-serif;}
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {font-family:'Lora',Arial, Tahoma, sans-serif;}
+
+.Head{ font-weight:bold; font-size:15px; }
+.SubHead { font-weight:bold;  font-size:14px; }
+.SubSubHead{ font-size:13px; }
+.Normal { font-size:13px; line-height:1.5em; }
+
+/*Bootstrap Reset*/
+[id^="ControlPanel"], [id*="ControlPanel"], [id^="ControlPanel"] *, [id*="ControlPanel"] *, [id^="ControlPanel"] *:after, [id*="ControlPanel"] *:after,
+.dnn_mact, .dnn_mact *, .dnn_mact *:before, .dnn_mact *:after,
+.dnnActionMenu, .dnnActionMenu *, .dnnActionMenu *:before, .dnnActionMenu *:after,
+.TB_Wrapper, .TB_Wrapper *{ -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
+[class^="RadAjaxPanel"] *, [class*="RadAjaxPanel"] *, [class^="Digital"] *, [class*="Digital"] * { font-size:12px; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
+ul.list-unstyled, ol.list-unstyled, ul.list-unstyled > li, ol.list-unstyled > li {list-style: none; padding:0; margin:0;}
+ol, ul {list-style: none;}
+ul li { list-style-type:disc;list-style: none; }
+ul li li { list-style-type:circle; }
+ol li { list-style-type: decimal;}
+a{outline:none!important;border:0;}
+.btn-primary, .btn-warning, .btn-danger, .btn-success, .btn-info{color:#ffffff!important;}
+ul#myTab { padding:0; margin:0; } 
+.panel-primary > .panel-heading h3 {color: #ffffff;}
+.panel-success > .panel-heading h3 {color: #468847;}
+.panel-warning > .panel-heading h3 {color: #c09853;}
+.panel-danger > .panel-heading h3 {color: #b94a48;}
+.panel-info > .panel-heading h3 {color: #3a87ad;}
+.popover {z-index:999;}
+
+/*spacer styles*/
+.pe-spacer { clear: both; display: block; margin: 0; min-height: 0 !important;  padding: 0; width: 100%;}
+.pe-spacer.size10 { height: 10px;}
+.pe-spacer.size20 { height: 20px;}
+.pe-spacer.size30 { height: 30px;}
+.pe-spacer.size40 { height: 40px;}
+.pe-spacer.size50 { height: 50px;}
+.pe-spacer.size60 { height: 60px;}
+.pe-spacer.size70 { height: 70px;}
+.pe-spacer.size80 { height: 80px;}
+.pe-spacer.size90 { height: 90px;}
+.pe-spacer.size100 { height: 100px;}
+
+/*border styles*/
+.left_border{ border-left:1px solid #e9e9e9;}
+.right_border{ border-right:1px solid #e9e9e9;}
+.top_border{ border-top:1px solid #e9e9e9;}
+.bottom_border{ border-bottom:1px solid #e9e9e9;}
+
+/*clear float*/
+.clearafter:after{ clear:both; content:"."; height:0px; font-size:0px; visibility:hidden; display:block; }
+.clearafter{ display:inline-block; }
+.clearafter{ display:block; }
+.clear{ clear:both; }
+.clear_float{ clear:both;line-height:0;font-size:0;}
+
+/*--------- Prefined Colors ----------*/
+/*prefined background color*/
+.bg_color{background-color:#898989;}
+
+/*prefined text color*/
+.text_color{color:#898989;}
+
+/*--------- Admin Settings Reset ----------*/
+.FileManager A, .FileManager A:link, .FileManager A:visited, .FileManager A:active{ color:#000000; text-decoration: underline;}
+.FileManager A:hover{ color:#000000; text-decoration:none;}
+.dnnPrimaryAction, .dnnFormItem input[type="submit"], a.dnnPrimaryAction, a.dnnPrimaryAction:link { color: #FFFFFF; text-decoration : none;}
+.dnnActionMenu span { color:#000000!important;}
+.ModuleTitle_SubMenu{ z-index:9999!important; }	
+.DnnModule{z-index:inherit;}
+.dnnSortable { min-height:0!important; }
+.dnnFormPopup .ui-dialog-titlebar { min-height:40px; }
+.DNNAligncenter table { margin: 0 auto;}
+
+/*--------- Breadcrumb style ----------*/
+.Breadcrumb, A.Breadcrumb:link, A.Breadcrumb:visited, A.Breadcrumb:active { color:#333; font-size:13px; text-decoration:none;}
+A.Breadcrumb:hover  { color:#898989; text-decoration:none;}
+
+/*--------- User style ----------*/
+.User, A.User:link, A.User:visited, A.User:active{ padding:3px 0 2px 0; font-size:12px; color:#888; text-decoration:none;}
+A.User:hover { color:#898989; text-decoration:none;}
+.User:after {content: " | ";padding-left:2px; color:#888;}
+
+/*--------- Login style ----------*/
+.Login, A.Login:link, A.Login:visited, A.Login:active{ padding:3px 5px 2px 3px; font-size:12px; color:#888; text-decoration:none;}
+A.Login:hover { color:#898989; text-decoration:none; }
+
+/*--------- Footer style ----------*/
+.Footer, A.Footer:link, A.Footer:visited, A.Footer:active { padding:0px 5px; color:#333; font-size:13px; text-decoration:none; }
+A.Footer:hover { color:#898989; text-decoration: none;}
+
+/*--------- Social-Links ----------*/
+.socialicons  { margin:10px 0 ;}
+.iconFacebook{width:28px;height:28px;background:url(images/socialicons.png) no-repeat 0 0;display:inline-block; padding:0;margin:0 1px;}
+.iconPinterest{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -29px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconTwitter{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -58px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconGoogle{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -87px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconRss{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -116px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconVimeo{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -145px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconEvernote{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -174px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconDribbble{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -203px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconTumblr{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -232px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconBehance{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -261px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconStumbleUpon{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -290px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconDropbox{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -319px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconSoundCloud{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -348px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconPicasa{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -377px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconLastfm{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -406px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconForrst{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -435px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconFlicr{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -464px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconDeviantArt{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -493px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconLinkedIn{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -522px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconBlogger{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -551px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconInstagram{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -580px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconYahoo{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -609px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconYouTube{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -638px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconGrooveshark{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -667px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconDigg{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -696px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconSkype{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -725px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconShareThis{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -754px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconWordPress{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -783px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconKickstarter{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -812px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconBebo{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -841px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconZerply{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -870px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconAmazon{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -899px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconMyspace{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -928px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconWikipedia{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -957px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconTechnorati{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -986px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconAddThis{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -1015px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconDelicious{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -1044px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconXing{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -1073px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconQuora{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -1102px 0;display:inline-block; padding:0;margin:0 1px;}
+.iconGitHub{width:28px;height:28px;background:url(images/socialicons.png) no-repeat -1131px 0;display:inline-block; padding:0;margin:0 1px;}
+
+/*--------- Social-Links Hover ---------*/
+a.iconFacebook:hover{ background-color:#5d82d1;background-position: 0 -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconPinterest:hover{ background-color:#e13138;background-position: -29px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconTwitter:hover{ background-color:#40bff5;background-position: -58px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconGoogle:hover{ background-color:#eb5e4c;background-position: -87px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconRss:hover{ background-color:#faa33d;background-position: -116px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconVimeo:hover{ background-color:#35c6ea;background-position: -145px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconEvernote:hover{ background-color:#9acf4f;background-position: -174px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconDribbble:hover{ background-color:#f7659c;background-position: -203px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconTumblr:hover{ background-color:#426d9b;background-position: -232px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconBehance:hover{ background-color:#1879fd;background-position: -261px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconStumbleUpon:hover{ background-color:#ff5c30;background-position: -290px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconDropbox:hover{ background-color:#17a3eb;background-position: -319px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconSoundCloud:hover{ background-color:#ff7e30;background-position: -348px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconPicasa:hover{ background-color:#9eb5b6;background-position: -377px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconLastfm:hover{ background-color:#f34320;background-position: -406px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconForrst:hover{ background-color:#45ad76;background-position: -435px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconFlicr:hover{ background-color:#ff48a3;background-position: -464px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconDeviantArt:hover{ background-color:#6a8a7b;background-position: -493px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconLinkedIn:hover{ background-color:#238cc8;background-position: -522px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconBlogger:hover{ background-color:#ff9233;background-position: -551px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconInstagram:hover{ background-color:#548bb6;background-position: -580px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconYahoo:hover{ background-color:#ab47ac;background-position: -609px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconYouTube:hover{ background-color:#ef4e41;background-position: -638px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconGrooveshark:hover{ background-color:#ffb21d;background-position: -667px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconDigg:hover{ background-color:#75788d;background-position: -696px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconSkype:hover{ background-color:#13c1f3;background-position: -725px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconShareThis:hover{ background-color:#25a774;background-position: -754px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconWordPress:hover{ background-color:#2592c3;background-position: -783px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconKickstarter:hover{ background-color:#8cd049;background-position: -812px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconBebo:hover{ background-color:#ee3849;background-position: -841px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconZerply:hover{ background-color:#ff5c30;background-position: -870px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconAmazon:hover{ background-color:#ff5c30;background-position: -899px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconMyspace:hover{ background-color:#ff5c30;background-position: -928px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconWikipedia:hover{ background-color:#ff5c30;background-position: -957px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconTechnorati:hover{ background-color:#ff5c30;background-position: -986px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconAddThis:hover{ background-color:#ff5c30;background-position: -1015px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconDelicious:hover{ background-color:#ff5c30;background-position: -1044px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconXing:hover{ background-color:#ff5c30;background-position: -1073px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconQuora:hover{ background-color:#ff5c30;background-position: -1102px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+a.iconGitHub:hover{ background-color:#ff5c30;background-position: -1131px -28px;-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;}
+
+/*--------- Social-Links2 ----------*/
+.socialicons2{  padding-top:20px;}
+.socialicons2 a{margin:5px 8px 0 0;padding:0;}
+
+.iconSkype2{width:30px;height:30px;background:url(images/socialicon2.png) no-repeat -10px -10px;display:inline-block;padding:0;margin:0 3px;}
+.iconLast_fm2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -43px -10px;display:inline-block;padding:0;margin:0 3px;}
+.iconFacebook2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -76px -10px;display:inline-block;padding:0;margin:0 3px;}
+.iconWordpress2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -109px -10px;display:inline-block;padding:0;margin:0 3px;}
+.iconVimeo_alt2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -142px -10px;display:inline-block;padding:0;margin:0 3px;}
+.iconRSS2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -175px -10px;display:inline-block;padding:0;margin:0 3px;}
+.iconRevision2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -208px -10px;display:inline-block;padding:0;margin:0 3px;}
+.iconRdio2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -241px -10px;display:inline-block;padding:0;margin:0 3px;}
+
+.iconEvernote2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -10px -43px;display:inline-block;padding:0;margin:0 3px;}
+.iconEmber2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -43px -43px;display:inline-block;padding:0;margin:0 3px;}
+.iconDropbox2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -76px -43px;display:inline-block;padding:0;margin:0 3px;}
+.iconAim2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -109px -43px;display:inline-block;padding:0;margin:0 3px;}
+.icon500px_alt2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -142px -43px;display:inline-block;padding:0;margin:0 3px;}
+.icon500px2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -175px -43px;display:inline-block;padding:0;margin:0 3px;}
+.iconWikipedia2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -208px -43px;display:inline-block;padding:0;margin:0 3px;}
+.iconVkontakte2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -241px -43px;display:inline-block;padding:0;margin:0 3px;}
+
+.iconTechnorati2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -10px -76px;display:inline-block;padding:0;margin:0 3px;}
+.iconStumbleupon2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -43px -76px;display:inline-block;padding:0;margin:0 3px;}
+.iconSquarespace2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -76px -76px;display:inline-block;padding:0;margin:0 3px;}
+.iconSpotify2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -109px -76px;display:inline-block;padding:0;margin:0 3px;}
+.iconSoundcloud2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -142px -76px;display:inline-block;padding:0;margin:0 3px;}
+.iconSkype_alt2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -175px -76px;display:inline-block;padding:0;margin:0 3px;}
+.iconPinterest2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -208px -76px;display:inline-block;padding:0;margin:0 3px;}
+.iconPicasa2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -241px -76px;display:inline-block;padding:0;margin:0 3px;}
+
+.iconMail_ru2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -10px -109px;display:inline-block;padding:0;margin:0 3px;}
+.iconMail2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -43px -109px;display:inline-block;padding:0;margin:0 3px;}
+.iconLinkedin_alt2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -76px -109px;display:inline-block;padding:0;margin:0 3px;}
+.iconLinkedin2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -109px -109px;display:inline-block;padding:0;margin:0 3px;}
+.iconGowalla2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -142px -109px;display:inline-block;padding:0;margin:0 3px;}
+.iconGoogle_alt_22{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -175px -109px;display:inline-block;padding:0;margin:0 3px;}
+.iconGoogle_alt2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -208px -109px;display:inline-block;padding:0;margin:0 3px;}
+.iconGoogle2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -241px -109px;display:inline-block;padding:0;margin:0 3px;}
+
+.iconFormspring2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -10px -142px;display:inline-block;padding:0;margin:0 3px;}
+.iconFlickr2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -43px -142px;display:inline-block;padding:0;margin:0 3px;}
+.iconDribbble2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -76px -142px;display:inline-block;padding:0;margin:0 3px;}
+.iconDigg2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -109px -142px;display:inline-block;padding:0;margin:0 3px;}
+.iconDeviantart_alt2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -142px -142px;display:inline-block;padding:0;margin:0 3px;}
+.iconDeviantart2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -175px -142px;display:inline-block;padding:0;margin:0 3px;}
+.iconDesignmoo2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -208px -142px;display:inline-block;padding:0;margin:0 3px;}
+.iconDelicious2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -241px -142px;display:inline-block;padding:0;margin:0 3px;}
+
+.iconYoutube2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -10px -175px;display:inline-block;padding:0;margin:0 3px;}
+.iconYahoo2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -43px -175px;display:inline-block;padding:0;margin:0 3px;}
+.iconWordpress_alt2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -76px -175px;display:inline-block;padding:0;margin:0 3px;}
+.iconGrooveshark2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -109px -175px;display:inline-block;padding:0;margin:0 3px;}
+.iconTumblr2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -142px -175px;display:inline-block;padding:0;margin:0 3px;}
+.iconMyspace2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -175px -175px;display:inline-block;padding:0;margin:0 3px;}
+.iconForrst2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -208px -175px;display:inline-block;padding:0;margin:0 3px;}
+.iconAsk_fm2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -241px -175px;display:inline-block;padding:0;margin:0 3px;}
+
+.iconInstagram_alt2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -10px -208px;display:inline-block;padding:0;margin:0 3px;}
+.iconInstagram2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -43px -208px;display:inline-block;padding:0;margin:0 3px;}
+.iconVimeo2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -76px -208px;display:inline-block;padding:0;margin:0 3px;}
+.iconTwitter2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -109px -208px;display:inline-block;padding:0;margin:0 3px;}
+.iconMyspace_alt2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -142px -208px;display:inline-block;padding:0;margin:0 3px;}
+.iconPaypal2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -175px -208px;display:inline-block;padding:0;margin:0 3px;}
+.iconGmail2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -208px -208px;display:inline-block;padding:0;margin:0 3px;}
+.iconFoursquare2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -241px -208px;display:inline-block;padding:0;margin:0 3px;}
+.iconBlogger2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -10px -241px;display:inline-block;padding:0;margin:0 3px;}
+.iconBehance2{width:30px;height:30px;background:url(images/socialicons2.png) no-repeat -43px -241px;display:inline-block;padding:0;margin:0 3px;}
+
+/*--------- Social-Links3 ----------*/
+.socialicons3 {  padding-top:15px;}
+.socialicons3 a{margin:0;padding:5px 8px 0 0;}
+
+.iconFacebook3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -5px -4px;display:inline-block; padding:0;margin:0;}
+.iconPinterest3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -46px -4px;display:inline-block; padding:0;margin:0;}
+.iconTwitter3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -87px -4px;display:inline-block; padding:0;margin:0;}
+.iconGoogle3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -128px -4px;display:inline-block; padding:0;margin:0;}
+.iconRss3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -169px -4px;display:inline-block; padding:0;margin:0;}
+
+.iconVimeo3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -5px -45px;display:inline-block;padding:0;margin:0;}
+.iconEvernote3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -46px -45px;display:inline-block;padding:0;margin:0;}
+.iconDribbble3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -87px -45px;display:inline-block;padding:0;margin:0;}
+.iconTumblr3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -128px -45px;display:inline-block;padding:0;margin:0;}
+.iconBehance3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -169px -45px;display:inline-block;padding:0;margin:0;}
+ 
+.iconStumbleUpon3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -5px -86px;display:inline-block;padding:0;margin:0;}
+.iconDropbox3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -46px -86px;display:inline-block;padding:0;margin:0;}
+.iconSoundCloud3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -87px -86px;display:inline-block;padding:0;margin:0;}
+.iconPicasa3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -128px -86px;display:inline-block;padding:0;margin:0;}
+.iconLastfm3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -169px -86px;display:inline-block;padding:0;margin:0;}
+
+.iconForrst3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -5px -128px;display:inline-block; padding:0;margin:0;}
+.iconFlicr3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -46px -128px;display:inline-block; padding:0;margin:0;}
+.iconDeviantArt3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -87px -128px;display:inline-block; padding:0;margin:0;}
+.iconLinkedIn3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -128px -128px;display:inline-block; padding:0;margin:0;}
+.iconBlogger3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -169px -128px;display:inline-block; padding:0;margin:0;}
+
+.iconInstagram3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -5px -169px;display:inline-block;padding:0;margin:0;}
+.iconYahoo3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -46px -169px;display:inline-block;padding:0;margin:0;}
+.iconYouTube3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -87px -169px;display:inline-block;padding:0;margin:0;}
+.iconGrooveshark3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -128px -169px;display:inline-block;padding:0;margin:0;}
+.iconDigg3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -169px -169px;display:inline-block;padding:0;margin:0;}
+
+.iconSkype3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -5px -211px;display:inline-block;padding:0;margin:0;}
+.iconShareThis3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -46px -211px;display:inline-block;padding:0;margin:0;}
+.iconWordPress3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -87px -211px;display:inline-block;padding:0;margin:0;}
+.iconKickstarter3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -128px -211px;display:inline-block;padding:0;margin:0;}
+.iconBebo3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -169px -211px;display:inline-block;padding:0;margin:0;}
+
+.iconZerply3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -5px -252px;display:inline-block; padding:0;margin:0;}
+.iconAmazon3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -46px -252px;display:inline-block; padding:0;margin:0;}
+.iconMyspace3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -87px -252px;display:inline-block; padding:0;margin:0;}
+.iconWikipedia3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -128px -252px;display:inline-block; padding:0;margin:0;}
+.iconTechnorati3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -169px -252px;display:inline-block; padding:0;margin:0;}
+
+.iconAddThis3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -5px -293px;display:inline-block;padding:0;margin:0;}
+.iconDelicious3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -46px -293px;display:inline-block;padding:0;margin:0;}
+.iconXing3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -87px -293px;display:inline-block;padding:0;margin:0;}
+.iconQuora3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -128px -293px;display:inline-block;padding:0;margin:0;}
+.iconGitHub3{width:28px;height:29px;background:url(images/socialicons3.png) no-repeat -169px -293px;display:inline-block;padding:0;margin:0;}

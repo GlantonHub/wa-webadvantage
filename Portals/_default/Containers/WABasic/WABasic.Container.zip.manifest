@@ -1,0 +1,168 @@
+﻿<dotnetnuke type="ResourceFile" version="5.0">
+  <files>
+    <file>
+      <path />
+      <name>Banner.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>Banner.jpg</name>
+    </file>
+    <file>
+      <path />
+      <name>BlackTitle01.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>BlackTitle01.jpg</name>
+    </file>
+    <file>
+      <path />
+      <name>BlackTitle02.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>BlackTitle02.jpg</name>
+    </file>
+    <file>
+      <path />
+      <name>BlackTitle03.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>BlackTitle03.jpg</name>
+    </file>
+    <file>
+      <path />
+      <name>BlackTitle04.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>BlackTitle04.jpg</name>
+    </file>
+    <file>
+      <path />
+      <name>Container01.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>Container01.jpg</name>
+    </file>
+    <file>
+      <path />
+      <name>Container02.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>Container02.jpg</name>
+    </file>
+    <file>
+      <path />
+      <name>Container03.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>Container03.jpg</name>
+    </file>
+    <file>
+      <path />
+      <name>Container04.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>Container04.jpg</name>
+    </file>
+    <file>
+      <path />
+      <name>Container05.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>Container05.jpg</name>
+    </file>
+    <file>
+      <path />
+      <name>Container06.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>Container06.jpg</name>
+    </file>
+    <file>
+      <path />
+      <name>Container07.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>Container07.jpg</name>
+    </file>
+    <file>
+      <path />
+      <name>Container08.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>Container08.jpg</name>
+    </file>
+    <file>
+      <path />
+      <name>Footer01.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>Footer01.jpg</name>
+    </file>
+    <file>
+      <path />
+      <name>NoTitle.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>NoTitle.jpg</name>
+    </file>
+    <file>
+      <path />
+      <name>container.css</name>
+    </file>
+    <file>
+      <path />
+      <name>container_color_bg.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>container_color_bg.jpg</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>container06_bg.png</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>container3_bg.png</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>container3_center.png</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>container3_left.png</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>container3_right.png</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>container6_center.jpg</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>container6_left.jpg</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>container6_right.jpg</name>
+    </file>
+  </files>
+</dotnetnuke>

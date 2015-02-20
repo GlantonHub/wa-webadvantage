@@ -1,0 +1,98 @@
+/*
+ * CSS For DotNetNuke Skin by bestdnnskins.com
+ * Copyright 2014 By BESTDNNSKINS.COM
+ */
+/*--------- CSS Reset for Tablet ----------*/
+@media handheld, only screen and (max-width: 1140px){
+/*-------- Design style --------*/
+.skin_wrapper { width:auto!important; margin:0 auto; max-width:768px;}
+.site_logo{line-height:50px;}
+.site_logo img { max-height:50px; }
+
+/*- menu style -*/
+#standardMenu li.lampback{ height:70px; }
+#standardMenu .rootMenu li a span { padding:0 8px; height:70px; line-height:70px;font-size:12px;}
+#standardMenu .subMenu {top:67px;}
+
+/*--------- Mega Menu Style ----------*/
+#megaMenu li.lampback{ height:70px; }
+#megaMenu .root li a span { padding:0 9px; height:70px; line-height:70px;font-size:12px;}
+#megaMenu .category{top:67px; width: 340px!important;}
+#megaMenu .category li { width: 160px;}
+#megaMenu .leaf li{ width:155px; }
+#megaMenu .leaf li li{ width:145px; }
+
+/*-------- Banner Container --------*/
+.banner_container{margin-bottom:-35px!important;}
+.bannerpane {margin-bottom:34px;}
+
+/*--------- Search Style ----------*/
+.search_style { display:none; }
+
+/*--------- Color Picker ----------*/
+#custom_wrapper, #custom-button {display:none;}
+
+/*--------- Togglable Tabs ----------*/
+.nav-tabs > li {float: none!important;}
+
+/*--------- Scroll Top  ----------*/
+#top-link { bottom: 20px; right: 20px; }
+
+/*---------- Skin Design Style-------------- */
+.skin_design h3{float:none;width:100%;text-align:center;padding:0;}
+.skin_design .design_catalog{float:none	;width:100%;}
+.skin_design #options ul{margin:0;text-align:center;padding:0 0 10px 0;}
+
+/*--------- Accordion Style ----------*/
+.accordion2 > h3{color:#333;font-size:13px;}
+.ui-accordion .ui-accordion-content {padding: 5px 3px 5px 10px;background:#fff;border:solid 1px #ccc;border-top:none;}
+
+/*---------- Project List -------------- */
+.project_list h3{margin:10px 0 0 0;}
+.project_list { padding:0;float:left;width:100%;}
+.project_list .intro { font-size:12px; margin:10px 0;}
+.project_pic{width:100%;}
+
+/*--------- Flex Banner Style ----------*/
+.mobile_hidden{display:none;}
+
+/*--------- Home Top Box Style ----------*/
+.box_text{font-sizes:13px;width:80%;}
+
+/*---------- Skin Skills Style-------------- */
+.skills_name{float:left;text-align:left;}
+
+/*---------Footer Fancybox Style ----------*/
+.fancybox_style ul li { margin:3px 1px; }
+/*--------- Site Footer Area ----------*/
+.footer_about .Social-Links a{margin:0 0 0 0;}
+
+/*---------- Skin Bottom Style-------------- */
+#cust_list{display:inline-block;margin:19px auto 0;}
+#cust_list li{float:left;margin-right:20px;cursor:pointer;}
+
+/*------------------ About Us Page -------------------*/
+.our_team .team_title h3{font-size:16px}
+.our_team .team_title span{font-size:13px;}
+.our_team .socialicons3 a{margin:0;}
+
+/*---------  Our Services Flip ----------*/
+.projects_content{padding:0;}
+.projects_content h3{font-size:15px;padding:2% 10px;}
+.hover_thumb_wrap{overflow:hidden;max-height:73px;padding:10% 10% 0;}
+.services_lists h3{font-size:16px;}
+
+/*------------------ Page 404 Page -------------------*/
+.page_404 .font-rotate{-moz-transform: rotate(0); /* FF3.5+ */-webkit-transform: rotate(0); transform: rotate(0); position:relative;right:0;top:0;}
+
+/*---------- Sortable Portfolio Style -------------- */
+.pg-img-wrapper{margin:10px;}
+.pg-details h2{font-size:15px;}
+.pg-info:hover .pg-details{ bottom: calc(30% - 20px);}
+
+/*---------- carouFredSel3 -------------- */
+.carouFredSel3 h3{font-size:14px;}
+
+/*---------- Gallery Page -------------- */
+.gallery_page .icon-circle{display:none;}
+}

@@ -1,0 +1,305 @@
+/*
+ * CSS For DotNetNuke Skin by bestdnnskins.com
+ * Copyright 2014 By BESTDNNSKINS.COM
+ */
+/*--------- CSS Reset for Mobile ----------*/
+@media handheld, only screen and (max-width: 767px) {
+body {-webkit-text-size-adjust:none;}
+.skin_wrapper { width:auto!important; min-width:300px;}
+.skin_width,body{width:100%;min-width:0;}
+.floatl, .floatr{ float: none;}
+.pc_display { display:none;}
+.mobile_display { display:block;}
+
+/*-------- design style --------*/
+.logo_style{padding:0;float:none;position:relative; min-height:60px;}
+.user_bar { float:none; }
+.headerpane_style{ float:none; display:none; }
+.site_logo{line-height:normal;margin-right:60px;}
+.site_logo img { max-height:none; }
+
+.user_style, .language_position{float:right;padding-top:10px;}
+#skin_menu{ min-height:0;padding-bottom:10px;}
+.menu_box{float:none; display:none; }
+#skin_header{ background:#494949;min-height:70px;position:relative;}
+
+.copyright_bg{text-align:center;}
+.footer_left{float:none;padding-bottom:10px;}
+.footer_right{float:none;}
+
+/*page name*/
+.page_name { min-height:50px;margin:0 0 0 0;padding:0;}
+.pagename_style h1{ line-height:50px;padding:0 0 0 12px;}
+.breadcrumb_style{ display:none; }
+
+/*leftsidebar layout*/
+.LM_position { float:none; width:auto; padding:10px 0 0;}
+.LM_skin_content { float:none; width:auto; padding:0;}
+#leftMenu { display:none;}
+
+/*mobile menu*/
+.mobile_nav { display:block; position:absolute; width:40px; height:40px; bottom:15px; right:10px;}
+.menuclick { background:url(../images/btn_menu.png) no-repeat center center #898989; width:40px; height:39px; padding:0;margin-left:1.5%; display: block; text-decoration: none; border:none; padding-top:20px 0; }
+
+/*--------- StandardMenu style ----------*/
+#standardMenu li{ float:none; border-bottom:1px solid #fff; border-bottom:1px solid rgba(255,255,255,.9); }
+#standardMenu li.lampback{ display:none;}
+
+#standardMenu .rootMenu li a{ background:#6b6b6b;}
+#standardMenu .rootMenu li.selected a, #standardMenu .rootMenu li.breadcrumb a, #standardMenu .rootMenu li:hover a, #standardMenu .rootMenu li a:hover { background:#898989;}
+#standardMenu .rootMenu li a span { padding:0 20px; color:#FFFFFF!important; font-size:12px;font-weight:600;height:38px; line-height:38px; }
+
+#standardMenu .rootMenu a span .navarrow{ position:absolute; width:60px; height:38px; right:0; background:url(../images/mobile_navarrow.png) no-repeat center 0;}
+#standardMenu .rootMenu a span .navarrow2{ background-position:center -42px;}
+
+/*-- submenu --*/
+#standardMenu .subMenu{ position:static; width:auto; padding:0; }
+#standardMenu .subMenu ul{ background:none; border:none;}
+#standardMenu .subMenu ul li {border:none;}
+#standardMenu .subMenu li.item a{ background:#f5f5f5; border-bottom:1px solid #ccc; border-bottom:1px solid rgba(0,0,0,.1); }
+#standardMenu .subMenu li.selected > a, #standardMenu .subMenu li.item a:hover { background:#ddd;}
+#standardMenu .subMenu li.item a span{ padding:0 15px 0 25px; color:#333!important; font-weight:normal; background:none; height:35px; line-height:35px;}
+#standardMenu .level1 li.item a span{ padding-left:40px; }
+#standardMenu .level2 li.item a span{ padding-left:55px; }
+#standardMenu .level3 li.item a span{ padding-left:70px; }
+#standardMenu .subMenu .subarrow{ display:none; background:none;}
+
+#standardMenu ul li ul li ul{ display:block;width:auto;}
+#standardMenu ul li ul li ul.level1{ display: block; position:static; left:auto; top:auto;}
+#standardMenu ul li ul li ul li ul.level2 { display: block; position:static; left:auto; top:auto;}
+#standardMenu ul li ul li ul li ul li ul.level3 { display: block; position:static; left:auto; top:auto;}
+#standardMenu ul li ul li ul li ul li:hover ul.level3 { display: block;position:static;left:auto;top:auto;}
+
+/*--------- MegaMenu style ----------*/
+#megaMenu li{ float:none; border-bottom:1px solid #fff; border-bottom:1px solid rgba(255,255,255,.9); }
+#megaMenu li.lampback{ display:none;}
+
+#megaMenu .root li a{ background:#6b6b6b;}
+#megaMenu .root li.selected a, #megaMenu .root li.breadcrumb a, #megaMenu .root li:hover a, #megaMenu .root li a:hover { background:#898989;}
+#megaMenu .root li a span { padding:0 20px; color:#FFFFFF!important; font-size:12px;font-weight:600;height:38px; line-height:38px; }
+
+#megaMenu .root a span .navarrow{ position:absolute; width:60px; height:38px; right:0; background:url(../images/mobile_navarrow.png) no-repeat center 0;}
+#megaMenu .root a span .navarrow2{ background-position:center -42px;}
+
+/*-- category --*/
+#megaMenu .category{position:static; width:auto!important; padding:0;}
+#megaMenu .category ul{background:#f5f5f5;  border:none; padding:0;}
+#megaMenu .category li{ width:auto; padding:0; float:none; border:none; }
+#megaMenu .category li.item a{ background:none; border-bottom:1px solid #ccc; border-bottom:1px solid rgba(0,0,0,.1); }
+#megaMenu .category li.selected > a, #megaMenu .category li a:hover { background:#ddd;}
+#megaMenu .category li.item a span{ padding:0 15px 0 25px; color:#333!important; font-weight:normal; background:none; height:35px; line-height:35px;}
+#megaMenu .category li li.item a span{ padding-left:40px; }
+#megaMenu .category li li li.item a span{ padding-left:55px; }
+#megaMenu .category li li li li.item a span{ padding-left:70px; }
+
+#megaMenu .leaf li{ width:auto; margin:0; padding:0; }
+#megaMenu .leaf li.item a{ padding:0;}
+#megaMenu .leaf li li{width:auto; }
+
+/*--------- pane style ----------*/
+.bannerpane { }
+.content_grid12 {}
+.one_grid4a {}
+.one_grid4b {}
+.one_grid4c {}
+.two_grid3a {}
+.two_grid3b {}
+.two_grid3c {}
+.two_grid3d {}
+.three_grid12 {}
+.four_grid8 {}
+.four_grid4 {}
+.five_grid4 {}
+.five_grid8 {}
+.six_grid6a {}
+.six_grid6b {}
+.seven_grid9 {}
+.seven_grid3 {}
+.eight_grid3 {}
+.eight_grid9 {}
+.nine_grid3a {}
+.nine_grid3b {}
+.nine_grid3c {}
+.nine_grid3d {}
+.ten_grid12 {}
+
+.fixedbg4a {}
+.fixedbg4b {}
+.fixedbg4c {}
+.fixedbg12 {}
+
+.graygrid4a {}
+.graygrid4b {}
+.graygrid4c {}
+.graygrid12 {}
+
+.BottomGrid12a {}
+.BottomGrid6a {}
+.BottomGrid3b {}
+.BottomGrid3c {}
+.BottomGrid12b {}
+
+.footer_grid3a { margin:10px 0;}
+.footer_grid3b { margin:10px 0;}
+.footer_grid3c { margin:10px 0;}
+.footer_grid3d { margin:10px 0;}
+.footerpane { margin:0 0 10px 0;}
+
+.i_content_grid12 {}
+.i_one_grid4a {}
+.i_one_grid4b {}
+.i_one_grid4c {}
+.i_two_grid3a {}
+.i_two_grid3b {}
+.i_two_grid3c {}
+.i_two_grid3d {}
+.i_three_grid12 {}
+.i_four_grid8 {}
+.i_four_grid4 {}
+.i_five_grid4 {}
+.i_five_grid8 {}
+.i_six_grid6a {}
+.i_six_grid6b {}
+.i_six_grid6c {}
+.i_seven_grid6a {}
+.i_seven_grid6b {}
+.i_eight_grid9 {}
+.i_eight_grid3 {}
+.i_nine_grid3 {}
+.i_nine_grid9 {}
+.i_ten_grid3a {}
+.i_ten_grid3b {}
+.i_ten_grid3c {}
+.i_ten_grid3d {}
+.i_eleven_grid12  {}
+
+.leftsidepane { padding:10px 0; }
+.l_one_grid8 {}
+.l_one_grid4 {}
+.l_two_grid6a {}
+.l_two_grid6b {}
+.l_three_grid4 {}
+.l_three_grid8 {}
+.l_four_grid12 {}
+
+/*--------- Scroll Top Style ----------*/
+#top-link { bottom: 12px; right: 20px; }
+
+/*--------- DNN Default Style Reset ----------*/
+.dnnFormPopup { width: 90%!important;}
+.LoginPanel, .dnnLogin  {width:auto; max-width:480px;}
+.dnnLogin  .dnnForm  {min-width: 0; width:auto;}
+.dnnLogin  .dnnFormLabel { width:auto; }
+.LoginPanel .dnnPrimaryAction{margin-left:82px;}
+.LoginPanel .dnnLoginRememberMe{padding-left:82px;}
+#dnn_ctr_Login_UP .dnnForm {min-width:280px; width:auto;}
+div.dnnRegistrationForm .dnnForm {width:auto;}
+div.dnnRegistrationForm .dnnFormItem label, div.dnnRegistrationForm .dnnFormItem .dnnFormLabel, div.dnnRegistrationForm .dnnFormItem .dnnTooltip {width:110px;}
+#dnn_ctr_Register_UP  .dnnForm {min-width:280px; max-width:480px; width:auto;}
+
+/*-------- Banner Container --------*/
+.banner_container{margin-bottom:0!important;}
+
+/*-------- Banner Style --------*/
+.banner_none{display:none!important;}
+
+/*--------- Togglable Tabs Style ----------*/
+.nav-tabs li { float:none; width:100%;}
+.nav-tabs li a { border:1px solid #CECECE; margin-right:0;}
+.nav-tabs li a:hover { border:1px solid #CECECE;}
+.nav-tabs3{padding:0;}
+
+/*--------- CarouFredSel Style ----------*/
+.carouFredSel{padding:0;}
+.icon-circle{display:none;}
+.carouFredSel_nav{padding-right:5px;}
+
+/*--------- Top Contact----------*/
+.top_contact{ display:none; }
+
+/*--------- Home Top Box ----------*/
+.box_text{float:none;width:100%;padding:10px 0;text-align:center;}
+.box_button{float:none;margin:0 auto;width:150px;}
+
+/*---------- Home Bottom Testimonials ----------*/
+#cust_list{display:inline-block;margin:25px auto 0;}
+.cust_wrapper .cust_text p{padding:10px 10px 10px;}
+#cust_list li.selected:before{display:none;}
+#cust_list li.selected:after{display:none;}
+
+/*---------- About Us Page ----------*/
+.our_team .col-sm-3{width:50%;float:left;}
+
+/*---------  Our Services Flip ----------*/
+.projects_content h3{font-size:13px;padding:1% 10px;}
+.hover_thumb_wrap{max-height:40px;padding:5% 10% 0;overflow:hidden;}
+.hover_thumb_wrap li img{width:25px;height:25px;border:1px solid #fff;}
+
+/*------- Sortable Portfolio Style -------- */
+.pg-details h2{line-height:18px;}
+.carouFredSel ul li { padding:0 3px;}
+.pg-categories{line-height:12px;margin:0;}
+.pg-info:hover .pg-details{bottom: calc(50% - 20px);}
+.icon-circle2{top: 25%; left: 40%;  }
+.pg-details2{ bottom: 30%; color: #ffffff; }
+.pg-details2 h2{font-size:18px;}
+.pg-categories2{ font-size: 15px;}
+.icon-circle3{top: 25%; left: 40%;  }
+.pg-details3{ bottom: 30%; color: #ffffff; }
+.pg-details3 h2{font-size:17px;}
+.pg-categories3{ font-size: 14px;}
+.pg-info4{width:88.5%;}
+.icon-circle6{ top:30%; left: 35%; }
+
+/*---------- Gallery Page -------------- */
+.gallery_page .pg-info{ display:none;}
+.gallery_box_outer{ min-height:50px;}
+
+/*--------- Price Table Page ----------*/
+.four-col .col{width:46%;margin:2% 2%;}
+.three-col .col{width:33.33333%;}
+.col.high{z-index:10;top:0; margin:0 0;}
+.col .wrap-inner{border-left:none;}
+.price-table .head_top h3, .price-table .head h3{font-size:15px;}
+
+/*--------- Page 404 Page ----------*/
+.page_404 h3{font-size:20px;}
+.page_404 h4{font-size:130px; letter-spacing:10px;}
+
+/*--------- Testimonial Page ----------*/
+.testimonial_list{float:left;width:96%;margin:0 2% 5%;}
+}
+
+@media handheld, only screen and (max-width:380px) {
+/*--------- Register and Login Style ----------*/
+#Login{ float:right;}
+#Login .registerGroup a { padding:0 4px;  }
+#Login .loginGroup a{ padding:0 4px; }
+.registerGroup .userMessages strong,.registerGroup .userNotifications strong{background:url(../images/userLoginSprite.png) no-repeat 5px -91px;}
+.registerGroup .userNotifications strong{ background-position:-96px -92px;}
+.registerGroup .userMessages strong:hover{background-position:5px -40px;}
+.registerGroup .userNotifications strong:hover{ background-position:-96px -42px;}
+.registerGroup .userMessages strong:active{background-position:5px -91px;}
+.registerGroup .userNotifications strong:active{ background-position:-96px -92px;}	
+.language-object{ display:inline; float:left; margin:0;}
+
+/*------------------ About Us Page -------------------*/
+/*Our Team Style*/
+.our_team .col-sm-3{width:100%;float:left;}
+
+/*---------- Home Bottom Testimonials ----------*/
+#cust_list{display:inline-block;margin:30px auto 0;}
+}
+
+/*--------- Retina Styles ----------*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (-moz-min-device-pixel-ratio: 2),
+       only screen and (-o-min-device-pixel-ratio: 2/1),
+       only screen and (min-device-pixel-ratio: 2) {
+
+.menuclick { background-image:url(../images/retina/btn_menu@2x.png); -webkit-background-size:20px 20px; -moz-background-size:20px 20px; background-size:20px 20px; }
+
+#standardMenu .rootMenu a span .navarrow, #standardMenu .rootMenu a span .navarrow2, 
+#megaMenu .root a span .navarrow, #megaMenu .root a span .navarrow2
+{background-image:url(../images/retina/mobile_navarrow@2x.png); -webkit-background-size:17px 80px; -moz-background-size:17px 80px; background-size:17px 80px;}
+}
