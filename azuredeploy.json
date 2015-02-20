@@ -1,0 +1,81 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
+    "contentVersion" : "1.0",
+    "parameters": { 
+        // name/value pairs representing the template inputs
+    },
+    
+	"variables": {
+        // arbitrary JSON data used for constants and metadata
+        // a JSON dictionary
+        // Can be complex values like JSON arrays and objects
+    },
+    
+	
+	"resources": 
+    [
+        // An array of JSON nodes representing resources
+          {
+            {
+    "apiVersion": "2014-04-01",
+    "name": "[parameters('siteName')]",
+    "type": "Microsoft.Web/Sites",
+    "location": "[parameters('siteLocation')]",
+    "properties": {
+        "name": "[parameters('siteName')]",
+        "serverFarm": "[parameters('hostingPlanName')]"
+    }
+    ,
+    "resources": [
+    ]
+}
+        },
+        {
+            {
+    "apiVersion": "2014-04-01",
+    "name": "[parameters('siteName')]",
+    "type": "Microsoft.Web/Sites",
+    "location": "[parameters('siteLocation')]",
+    "properties": {
+        "name": "[parameters('siteName')]",
+        "serverFarm": "[parameters('hostingPlanName')]"
+    },
+   
+
+{
+{
+    "apiVersion": "2014-04-01",
+    "name": "[parameters('siteName')]",
+    "type": "Microsoft.Web/Sites",
+    "location": "[parameters('siteLocation')]",
+    "properties": {
+        "name": "[parameters('siteName')]",
+        "serverFarm": "[parameters('hostingPlanName')]"
+    },
+    "resources": [
+        {
+            "apiVersion": "2014-04-01",
+            "type": "config",
+            "name": "web",
+            "properties": {
+                "connectionStrings": [
+                    {
+                        "ConnectionString": "[concat('Data Source=tcp:', reference(concat('Microsoft.Sql/servers/', parameters('serverName'))).fullyQualifiedDomainName, ',1433;Initial Catalog=', parameters('siteName'), '_db', ';User Id=', parameters('administratorLogin'), '@', parameters('serverName'), ';Password=', parameters('administratorLoginPassword'), ';')]",
+                        "Name": "DefaultConnection",
+                        "Type": 2
+                    }
+                ]
+            }
+        }
+    ]
+}
+
+}
+
+        }
+    ],
+    "outputs": {
+        // JSON declaration of output of the template
+        // exact format below
+    }    
+}
