@@ -116,7 +116,7 @@
       },
       "resources": [
         {
-          "apiVersion": "2014-04-01",w
+          "apiVersion": "2014-04-01",
           "type": "config",
           "name": "web",
           "dependsOn": [
