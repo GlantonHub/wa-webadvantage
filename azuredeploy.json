@@ -116,7 +116,7 @@
       },
       "resources": [
         {
-          "apiVersion": "2014-04-01",
+          "apiVersion": "2014-04-01",w
           "type": "config",
           "name": "web",
           "dependsOn": [
@@ -125,7 +125,7 @@
           "properties": {
             "connectionStrings": [
               {
-                "ConnectionString": "[concat('Data Source=tcp:', reference(concat('Microsoft.Sql/servers/', parameters('sqlServerName'))).fullyQualifiedDomainName, ',1433;Initial Catalog=', parameters('siteName'), ';User Id=', parameters('sqlAdministratorLogin'), '@', parameters('sqlServerName'), ';Password=', parameters('sqlAdministratorPassword'), ';')]",
+                "ConnectionString": "['server=', parameters('sqlServerName'))).fullyQualifiedDomainName, ', Database=', parameters('siteName'), ';uid=', parameters('sqlAdministratorLogin'), '@', parameters('sqlServerName'), ';Password=', parameters('sqlAdministratorPassword'), ';')]",
                 "Name": "Jabbr",
                 "Type": 2
               }
