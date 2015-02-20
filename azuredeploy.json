@@ -126,10 +126,10 @@
             "connectionStrings": [
               {
 			  
-			 
+			  
 			  
  
-			   "ConnectionString": "[concat('Server=tcp:', reference(concat('Microsoft.Sql/servers/', parameters('sqlServerName'))).fullyQualifiedDomainName, ',;Initial Catalog=', parameters('siteName'), ';UId=', parameters('sqlAdministratorLogin'), '@', parameters('sqlServerName'), ';Password=', parameters('sqlAdministratorPassword') ';)]",
+			   "ConnectionString": "[concat('Server=tcp:', reference(concat('Microsoft.Sql/servers/', parameters('sqlServerName'))).fullyQualifiedDomainName, ',;Initial Catalog=', parameters('siteName'), ';UId=', parameters('sqlAdministratorLogin'), '@', parameters('sqlServerName'), ';Password=', parameters('sqlAdministratorPassword') ';)]" ,
                 "Name": "WA",
                 "Type": 2
 			   
