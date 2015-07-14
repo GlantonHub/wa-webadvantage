@@ -126,7 +126,9 @@
 		  "properties": {
             "connectionStrings": [
               {
-                "ConnectionString": "[concat('Server=tcp:', reference(concat('Microsoft.Sql/servers/', parameters('sqlServerName'))).fullyQualifiedDomainName, ',1433;Initial Catalog=', parameters('siteName'), ';UId=', parameters('sqlAdministratorLogin'), '@', parameters('sqlServerName'), ';Password=', parameters('sqlAdministratorPassword'), ';')]",
+			  
+ 
+                "ConnectionString": "[concat('Server=tcp:', reference(concat('Microsoft.Sql/servers/', parameters('sqlServerName'))).fullyQualifiedDomainName, ',1433;Initial Catalog=', parameters('siteName'), ';uid=', parameters('sqlAdministratorLogin'), '@', parameters('sqlServerName'), ';pwd=', parameters('sqlAdministratorPassword'), ';')]",
                 "Name": "SiteSqlServer",
                 "Type": 2
               }
